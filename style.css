@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fuwatAnime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+   }
+   @-webkit-keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+   }
+   @keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+   }
+
+.blue {
+    background-color: #3D5CDB;
+}
+
+.yellow{
+    background-color: #ffbf00;
+}
+
+.html-color {
+    background-color: #F16529;
+}
+
+.css-color {
+    background-color: #29A9DF;
+}
+
+.unity-color {
+    background-color: #333333;
+}
+
+.ruby-color{
+    background-color: #FF5252;
+}
+
+.js-color {
+    background-color: #FED700;
+}
+
+.swift-color {
+    background-color: #FE7536;
+}
+
+.go-color {
+    background-color: #73CEDD;
+}
+
+#top {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+}
+
+#top nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top nav ul {
+    overflow: hidden;
+    display: flex;
+    margin: 1rem 2rem;
+}
+
+#top nav ul li {
+    padding: 10px 15px;
+    list-style: none;
+}
+
+#top nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+    font-size: 26.666px;
+    font-family: "Futura";
+}
+
+#top nav a:hover{
+    color: #3D5CDB;
+}
+
+.page-top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+
+.page-top img{
+    width: 60vw; 
+    margin: auto;
+}
+
+.page-top p{
+    color: #fff;
+    font-size: 3vw;
+    font-family: "Futura";
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.title {
+    text-align: center;
+    font-size: 53px;
+    padding: 40px; 
+    color:#3D5CDB;
+    font-family: "Futura";
+    font-weight: bold;
+}
+
+.introduction-all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.intro-image-container img{
+    width: 500px;
+    margin: 20px;
+}
+
+.intro-text-container{
+    width: 500px;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+.intro-text-container p{
+    width: 400px;
+    padding: 0px 50px;
+    line-height: 2;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', sans-serif;
+}
+
+.intro-text-container a {
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    margin: 30px auto;
+    text-decoration: none;
+    color:#ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px 2px rgba(140, 140, 140, 0.4);
+}
+
+.intro-text-container a:hover {
+    box-shadow: none;
+}
+
+#courses {
+    position: relative;
+}
+
+#particles-js {
+    background-color: #dceafc;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.courses-all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 12vw 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    width: 180px;
+    height: 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+    margin: 10px
+}
+
+.course-card .course-image{
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.course-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.course-card h3{
+    color: #183c61;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+    margin: 10px;
+    padding-top: 20px;
+    color: #183c61;
+}
+
+.course-card a{
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    margin: 30px auto;
+    text-decoration: none;
+    color:#ffffff;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 12px;
+}
+
+#images {
+    margin-bottom: 50px;
+}
+
+
+.slider{
+    margin: 30px auto;
+    width: 80%;
+}
+
+.slider img{
+    height: auto;
+    width: 100%;
+}
+
+.slick-prev::before, .slick-next::before {
+    z-index: 100;
+    color: #000 !important;
+    opacity: 0.8;
+}
+
+#access {
+    text-align: center;
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
+footer p {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-family: "Futura";
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+    color: #3D5CDB;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .title{
+        font-size: 10vw;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .intro-image-container img {
+        width: 80vw;
+    }
+    .intro-text-container {
+        width: 80vw;
+    }
+
+    .intro-text-container p{
+        width: 60vw;
+        margin: auto;
+        padding: 0;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 75vw;
+    }
+}
