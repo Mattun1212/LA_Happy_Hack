@@ -22,7 +22,7 @@
    @keyframes fuwatAnime {
     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
-   }
+}
 
 .blue {
     background-color: #3D5CDB;
@@ -147,7 +147,7 @@
 
 .intro-text-container{
     width: 500px;
-    margin: 0px 20px;
+    margin: 0 20px;
     align-items: center;
 }
 
@@ -199,9 +199,15 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 12vw 50px;
+}
+
+.courses-container {
+    max-width: 1200px;
+    display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 
 .course-card {
@@ -209,9 +215,10 @@
     height: 280px;
     background-color: #ffffff;
     border-radius: 8px;
-    text-align: center;
+    margin: 20px 10px;
     padding: 30px;
-    margin: 10px
+    display: flex;
+    flex-direction: column;
 }
 
 .course-card .course-image{
@@ -243,11 +250,12 @@
     width: 170px;
     height: 40px;
     line-height: 40px;
-    margin: 30px auto;
+    margin: 15px auto;
     text-decoration: none;
     color:#ffffff;
     text-align: center;
     font-size: 13px;
+    font-weight: bold;
     border-radius: 12px;
 }
 
@@ -292,6 +300,33 @@ footer p {
     color: #3D5CDB;
 }
 
+
+@media (min-width: 768px){
+    .courses-container {
+        width: 750px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    .intro-text-container p {
+        width: 500px;
+        padding: 0;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 1200px){
+    .courses-container {
+        width: 1150px;
+    }
+}
+
+
+
 @media screen and (max-width: 600px) {
     nav {
         display: none;
@@ -301,25 +336,49 @@ footer p {
         font-size: 10vw;
     }
 
-    .reverse {
-        flex-direction: column-reverse;
-    }
-
-    .intro-image-container img {
+    .intro-image-container img{
         width: 80vw;
     }
+
     .intro-text-container {
         width: 80vw;
     }
 
     .intro-text-container p{
-        width: 60vw;
-        margin: auto;
+        width: 100%;
+        margin: auto 0;
         padding: 0;
     }
 
     iframe {
         width: 100vw;
         height: 75vw;
+    }
+}
+
+
+@media (max-width: 450px){
+    .courses-all-container{
+        padding: 0 0 50px;
+    }
+
+    .course-card {
+        width: 140px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .course-card .course-image {
+        width: 90px;
+        height: 90px;
+        margin-top: 10px;
+    } 
+
+    .course-card h3{
+        font-size: 15px;
+        margin: 0;
+    }
+    .course-card a{
+        width: 100%;
     }
 }
